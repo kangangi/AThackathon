@@ -21,9 +21,8 @@ def index(request):
 
         if text == "":
             response = "CON Welcome, which event would you like to attend? \n"
-            response += "1. AT Hackathon"
-            response += "2. WIT Event"
-
+            response += "1. AT Hackathon\n"
+            response += "2. WIT Event\n"
 
         elif text == "1":
             #Get event details
