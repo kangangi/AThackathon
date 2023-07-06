@@ -1,10 +1,13 @@
 from django.db import models
 
+
 # Create your models here.
 class Event(models.Model):
     eventName = models.CharField(max_length=100, null=True, blank=True)
     organizer = models.CharField(max_length=100, null=True, blank=True)
     frequency = models.IntegerField(default=30, null=True, blank=True)
+   # nextDate = models.DateField(null=True, blank=True)
+
 
     def _str_(self):
         return self.name
